@@ -26,6 +26,8 @@ GITHUB_BRANCH_OR_TAG=main
         rm hiddify-config.zip
         mv hiddify-config-9.4.3/* .
         rm hiddify-config-9.4.3
+        wget https://raw.githubusercontent.com/randomguy-on-internet/hiddify-config/main/hiddify-panel/install.sh -o ./hiddify-panel/install.sh
+        chmod +x ./hiddify-panel/install.sh
         bash install.sh
         # exit 0
 # fi 
