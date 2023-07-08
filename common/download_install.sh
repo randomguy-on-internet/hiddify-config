@@ -24,7 +24,8 @@ GITHUB_BRANCH_OR_TAG=main
         wget https://github.com/hiddify/hiddify-config/archive/v9.4.3.zip -O hiddify-config.zip
         unzip -o hiddify-config.zip
         rm hiddify-config.zip
-        
+        mv hiddify-config-9.4.3/* .
+        rm hiddify-config-9.4.3
         bash install.sh
         # exit 0
 # fi 
