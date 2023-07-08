@@ -1,7 +1,7 @@
 
 systemctl kill hiddify-admin.service
 systemctl disable hiddify-admin.service
-apt install -y python3-dev
+apt install -y python3-dev less
 for req in pip3 uwsgi  python3 hiddifypanel lastversion jq;do
     which $req
     if [[ "$?" != 0 ]];then
