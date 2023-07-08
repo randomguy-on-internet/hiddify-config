@@ -9,3 +9,5 @@ sudo apt update&&sudo apt install curl&& sudo bash -c "$(curl -Lfo- https://raw.
 ```
 
 if the panel didnt load, do apply configs from menu once!
+
+![Screenshot_2](https://github.com/randomguy-on-internet/hiddify-config/assets/79375739/911e45dd-7eeb-4829-b28d-2fcda8660df5)
