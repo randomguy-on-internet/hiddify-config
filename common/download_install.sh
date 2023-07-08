@@ -21,7 +21,7 @@ GITHUB_BRANCH_OR_TAG=main
         pip3 install lastversion "requests<=2.29.0"
         mkdir -p /opt/$GITHUB_REPOSITORY
         cd /opt/$GITHUB_REPOSITORY
-        wget  $(lastversion --at github --assets --filter hiddify-config.zip  hiddify/hiddify-config) -O hiddify-config.zip
+        wget  wget https://github.com/hiddify/hiddify-config/archive/v9.4.3.zip -O hiddify-config.zip
         unzip -o hiddify-config.zip
         rm hiddify-config.zip
         
