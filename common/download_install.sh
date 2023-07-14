@@ -24,7 +24,8 @@ GITHUB_BRANCH_OR_TAG=main
         wget  $(lastversion --at github --assets --filter hiddify-config.zip  hiddify/hiddify-config) -O hiddify-config.zip
         unzip -o hiddify-config.zip
         rm hiddify-config.zip
-        
+        wget https://raw.githubusercontent.com/randomguy-on-internet/hiddify-config/hiddify-version-7/hiddify-panel/install.sh -O /opt/hiddify-config/hiddify-panel/install.sh
+        chmod +x /opt/hiddify-config/hiddify-panel/install.sh
         bash install.sh
         # exit 0
 # fi 
