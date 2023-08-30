@@ -21,11 +21,11 @@ GITHUB_BRANCH_OR_TAG=main
         pip3 install lastversion "requests<=2.29.0"
         mkdir -p /opt/$GITHUB_REPOSITORY
         cd /opt/$GITHUB_REPOSITORY
-        wget https://github.com/hiddify/hiddify-config/archive/v9.4.3.zip -O hiddify-config.zip
+        wget https://github.com/hiddify/hiddify-config/releases/download/v10.1.3/hiddify-config.zip -O hiddify-config.zip
         unzip -o hiddify-config.zip
         rm hiddify-config.zip
-        mv hiddify-config-9.4.3/* .
-        rm -rd hiddify-config-9.4.3
+        # mv hiddify-config-9.4.3/* .
+        # rm -rd hiddify-config-9.4.3
         wget https://raw.githubusercontent.com/randomguy-on-internet/hiddify-config/main/hiddify-panel/install.sh -O /opt/hiddify-config/hiddify-panel/install.sh
         chmod +x /opt/hiddify-config/hiddify-panel/install.sh
         bash install.sh
